@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B71653991792C9D600FE7D06 /* VDFileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B71653981792C9D600FE7D06 /* VDFileCell.m */; };
+		B764D0271793F05C00B546B9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B764D0261793F05C00B546B9 /* CoreData.framework */; };
+		B764D02A1793F08F00B546B9 /* YandexDisk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B764D0281793F08F00B546B9 /* YandexDisk.xcdatamodeld */; };
+		B764D02D17952EBF00B546B9 /* VDCDFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B764D02C17952EBF00B546B9 /* VDCDFile.m */; };
+		B764D07117956DB400B546B9 /* VDDataSynchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B764D07017956DB400B546B9 /* VDDataSynchronizer.m */; };
+		B764D0771795720900B546B9 /* VDCDFile+DataSync.m in Sources */ = {isa = PBXBuildFile; fileRef = B764D0761795720900B546B9 /* VDCDFile+DataSync.m */; };
+		B7CC21D01795BCD200757D12 /* VDDAVSession.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CC21CF1795BCD200757D12 /* VDDAVSession.m */; };
 		B7EC1E11178E7DF90094B58F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EC1E10178E7DF90094B58F /* UIKit.framework */; };
 		B7EC1E13178E7DF90094B58F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EC1E12178E7DF90094B58F /* Foundation.framework */; };
 		B7EC1E15178E7DF90094B58F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EC1E14178E7DF90094B58F /* CoreGraphics.framework */; };
@@ -17,26 +24,47 @@
 		B7EC1E25178E7DFA0094B58F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7EC1E24178E7DFA0094B58F /* Default@2x.png */; };
 		B7EC1E27178E7DFA0094B58F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7EC1E26178E7DFA0094B58F /* Default-568h@2x.png */; };
 		B7EC1E2A178E7DFA0094B58F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7EC1E28178E7DFA0094B58F /* MainStoryboard.storyboard */; };
-		B7EC1E2D178E7DFA0094B58F /* VDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EC1E2C178E7DFA0094B58F /* VDViewController.m */; };
+		B7EC1E36178E802E0094B58F /* VDDAVRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EC1E35178E802E0094B58F /* VDDAVRequest.m */; };
+		B7EC1E3917916F3D0094B58F /* VDDAVResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EC1E3817916F3D0094B58F /* VDDAVResponseParser.m */; };
+		B7EC1E3C179172150094B58F /* VDDAVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EC1E3B179172150094B58F /* VDDAVFile.m */; };
+		B7EC1E3F1791D5680094B58F /* VDFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EC1E3E1791D5680094B58F /* VDFilesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B7EC1E0D178E7DF90094B58F /* YandexDisk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexDisk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B71653971792C9D600FE7D06 /* VDFileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDFileCell.h; sourceTree = "<group>"; };
+		B71653981792C9D600FE7D06 /* VDFileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDFileCell.m; sourceTree = "<group>"; };
+		B764D0261793F05C00B546B9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B764D0291793F08F00B546B9 /* YandexDisk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YandexDisk.xcdatamodel; sourceTree = "<group>"; };
+		B764D02B17952EBF00B546B9 /* VDCDFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDCDFile.h; sourceTree = "<group>"; };
+		B764D02C17952EBF00B546B9 /* VDCDFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDCDFile.m; sourceTree = "<group>"; };
+		B764D06F17956DB400B546B9 /* VDDataSynchronizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDataSynchronizer.h; sourceTree = "<group>"; };
+		B764D07017956DB400B546B9 /* VDDataSynchronizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDDataSynchronizer.m; sourceTree = "<group>"; };
+		B764D0751795720800B546B9 /* VDCDFile+DataSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VDCDFile+DataSync.h"; sourceTree = "<group>"; };
+		B764D0761795720900B546B9 /* VDCDFile+DataSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VDCDFile+DataSync.m"; sourceTree = "<group>"; };
+		B7CC21CE1795BCD200757D12 /* VDDAVSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDAVSession.h; sourceTree = "<group>"; };
+		B7CC21CF1795BCD200757D12 /* VDDAVSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDDAVSession.m; sourceTree = "<group>"; };
+		B7EC1E0D178E7DF90094B58F /* Yandex.Disk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yandex.Disk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EC1E10178E7DF90094B58F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B7EC1E12178E7DF90094B58F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B7EC1E14178E7DF90094B58F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B7EC1E18178E7DF90094B58F /* YandexDisk-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YandexDisk-Info.plist"; sourceTree = "<group>"; };
+		B7EC1E18178E7DF90094B58F /* Yandex.Disk-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Yandex.Disk-Info.plist"; sourceTree = "<group>"; };
 		B7EC1E1A178E7DF90094B58F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B7EC1E1C178E7DF90094B58F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B7EC1E1E178E7DF90094B58F /* YandexDisk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YandexDisk-Prefix.pch"; sourceTree = "<group>"; };
+		B7EC1E1E178E7DF90094B58F /* Yandex.Disk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yandex.Disk-Prefix.pch"; sourceTree = "<group>"; };
 		B7EC1E1F178E7DF90094B58F /* VDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDAppDelegate.h; sourceTree = "<group>"; };
 		B7EC1E20178E7DF90094B58F /* VDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDAppDelegate.m; sourceTree = "<group>"; };
 		B7EC1E22178E7DFA0094B58F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B7EC1E24178E7DFA0094B58F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B7EC1E26178E7DFA0094B58F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B7EC1E29178E7DFA0094B58F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B7EC1E2B178E7DFA0094B58F /* VDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDViewController.h; sourceTree = "<group>"; };
-		B7EC1E2C178E7DFA0094B58F /* VDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDViewController.m; sourceTree = "<group>"; };
+		B7EC1E34178E802E0094B58F /* VDDAVRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDAVRequest.h; sourceTree = "<group>"; };
+		B7EC1E35178E802E0094B58F /* VDDAVRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDDAVRequest.m; sourceTree = "<group>"; };
+		B7EC1E3717916F3D0094B58F /* VDDAVResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDAVResponseParser.h; sourceTree = "<group>"; };
+		B7EC1E3817916F3D0094B58F /* VDDAVResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDDAVResponseParser.m; sourceTree = "<group>"; };
+		B7EC1E3A179172150094B58F /* VDDAVFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDAVFile.h; sourceTree = "<group>"; };
+		B7EC1E3B179172150094B58F /* VDDAVFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDDAVFile.m; sourceTree = "<group>"; };
+		B7EC1E3D1791D5670094B58F /* VDFilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDFilesViewController.h; sourceTree = "<group>"; };
+		B7EC1E3E1791D5680094B58F /* VDFilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDFilesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B764D0271793F05C00B546B9 /* CoreData.framework in Frameworks */,
 				B7EC1E11178E7DF90094B58F /* UIKit.framework in Frameworks */,
 				B7EC1E13178E7DF90094B58F /* Foundation.framework in Frameworks */,
 				B7EC1E15178E7DF90094B58F /* CoreGraphics.framework in Frameworks */,
@@ -53,10 +82,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B764D02E17952ED200B546B9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B764D0281793F08F00B546B9 /* YandexDisk.xcdatamodeld */,
+				B764D02B17952EBF00B546B9 /* VDCDFile.h */,
+				B764D02C17952EBF00B546B9 /* VDCDFile.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		B764D02F17952EE600B546B9 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				B7EC1E28178E7DFA0094B58F /* MainStoryboard.storyboard */,
+				B7EC1E3D1791D5670094B58F /* VDFilesViewController.h */,
+				B7EC1E3E1791D5680094B58F /* VDFilesViewController.m */,
+				B71653971792C9D600FE7D06 /* VDFileCell.h */,
+				B71653981792C9D600FE7D06 /* VDFileCell.m */,
+			);
+			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		B764D06E17956D1E00B546B9 /* DataSync */ = {
+			isa = PBXGroup;
+			children = (
+				B764D06F17956DB400B546B9 /* VDDataSynchronizer.h */,
+				B764D07017956DB400B546B9 /* VDDataSynchronizer.m */,
+				B764D0751795720800B546B9 /* VDCDFile+DataSync.h */,
+				B764D0761795720900B546B9 /* VDCDFile+DataSync.m */,
+			);
+			name = DataSync;
+			sourceTree = "<group>";
+		};
 		B7EC1E04178E7DF90094B58F = {
 			isa = PBXGroup;
 			children = (
-				B7EC1E16178E7DF90094B58F /* YandexDisk */,
+				B7EC1E16178E7DF90094B58F /* Yandex.Disk */,
 				B7EC1E0F178E7DF90094B58F /* Frameworks */,
 				B7EC1E0E178E7DF90094B58F /* Products */,
 			);
@@ -65,7 +127,7 @@
 		B7EC1E0E178E7DF90094B58F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B7EC1E0D178E7DF90094B58F /* YandexDisk.app */,
+				B7EC1E0D178E7DF90094B58F /* Yandex.Disk.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +135,7 @@
 		B7EC1E0F178E7DF90094B58F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B764D0261793F05C00B546B9 /* CoreData.framework */,
 				B7EC1E10178E7DF90094B58F /* UIKit.framework */,
 				B7EC1E12178E7DF90094B58F /* Foundation.framework */,
 				B7EC1E14178E7DF90094B58F /* CoreGraphics.framework */,
@@ -80,26 +143,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B7EC1E16178E7DF90094B58F /* YandexDisk */ = {
+		B7EC1E16178E7DF90094B58F /* Yandex.Disk */ = {
 			isa = PBXGroup;
 			children = (
 				B7EC1E1F178E7DF90094B58F /* VDAppDelegate.h */,
 				B7EC1E20178E7DF90094B58F /* VDAppDelegate.m */,
-				B7EC1E28178E7DFA0094B58F /* MainStoryboard.storyboard */,
-				B7EC1E2B178E7DFA0094B58F /* VDViewController.h */,
-				B7EC1E2C178E7DFA0094B58F /* VDViewController.m */,
+				B764D06E17956D1E00B546B9 /* DataSync */,
+				B7EC1E33178E7FEF0094B58F /* WebDAV */,
+				B764D02F17952EE600B546B9 /* UserInterface */,
+				B764D02E17952ED200B546B9 /* CoreData */,
 				B7EC1E17178E7DF90094B58F /* Supporting Files */,
 			);
+			name = Yandex.Disk;
 			path = YandexDisk;
 			sourceTree = "<group>";
 		};
 		B7EC1E17178E7DF90094B58F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B7EC1E18178E7DF90094B58F /* YandexDisk-Info.plist */,
+				B7EC1E18178E7DF90094B58F /* Yandex.Disk-Info.plist */,
 				B7EC1E19178E7DF90094B58F /* InfoPlist.strings */,
 				B7EC1E1C178E7DF90094B58F /* main.m */,
-				B7EC1E1E178E7DF90094B58F /* YandexDisk-Prefix.pch */,
+				B7EC1E1E178E7DF90094B58F /* Yandex.Disk-Prefix.pch */,
 				B7EC1E22178E7DFA0094B58F /* Default.png */,
 				B7EC1E24178E7DFA0094B58F /* Default@2x.png */,
 				B7EC1E26178E7DFA0094B58F /* Default-568h@2x.png */,
@@ -107,12 +172,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B7EC1E33178E7FEF0094B58F /* WebDAV */ = {
+			isa = PBXGroup;
+			children = (
+				B7CC21CE1795BCD200757D12 /* VDDAVSession.h */,
+				B7CC21CF1795BCD200757D12 /* VDDAVSession.m */,
+				B7EC1E34178E802E0094B58F /* VDDAVRequest.h */,
+				B7EC1E35178E802E0094B58F /* VDDAVRequest.m */,
+				B7EC1E3717916F3D0094B58F /* VDDAVResponseParser.h */,
+				B7EC1E3817916F3D0094B58F /* VDDAVResponseParser.m */,
+				B7EC1E3A179172150094B58F /* VDDAVFile.h */,
+				B7EC1E3B179172150094B58F /* VDDAVFile.m */,
+			);
+			name = WebDAV;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B7EC1E0C178E7DF90094B58F /* YandexDisk */ = {
+		B7EC1E0C178E7DF90094B58F /* Yandex.Disk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7EC1E30178E7DFA0094B58F /* Build configuration list for PBXNativeTarget "YandexDisk" */;
+			buildConfigurationList = B7EC1E30178E7DFA0094B58F /* Build configuration list for PBXNativeTarget "Yandex.Disk" */;
 			buildPhases = (
 				B7EC1E09178E7DF90094B58F /* Sources */,
 				B7EC1E0A178E7DF90094B58F /* Frameworks */,
@@ -122,9 +202,9 @@
 			);
 			dependencies = (
 			);
-			name = YandexDisk;
+			name = Yandex.Disk;
 			productName = YandexDisk;
-			productReference = B7EC1E0D178E7DF90094B58F /* YandexDisk.app */;
+			productReference = B7EC1E0D178E7DF90094B58F /* Yandex.Disk.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +217,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Vitaly Dyachkov";
 			};
-			buildConfigurationList = B7EC1E08178E7DF90094B58F /* Build configuration list for PBXProject "YandexDisk" */;
+			buildConfigurationList = B7EC1E08178E7DF90094B58F /* Build configuration list for PBXProject "Yandex.Disk" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -149,7 +229,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B7EC1E0C178E7DF90094B58F /* YandexDisk */,
+				B7EC1E0C178E7DF90094B58F /* Yandex.Disk */,
 			);
 		};
 /* End PBXProject section */
@@ -176,7 +256,16 @@
 			files = (
 				B7EC1E1D178E7DF90094B58F /* main.m in Sources */,
 				B7EC1E21178E7DF90094B58F /* VDAppDelegate.m in Sources */,
-				B7EC1E2D178E7DFA0094B58F /* VDViewController.m in Sources */,
+				B7EC1E36178E802E0094B58F /* VDDAVRequest.m in Sources */,
+				B7EC1E3917916F3D0094B58F /* VDDAVResponseParser.m in Sources */,
+				B7EC1E3C179172150094B58F /* VDDAVFile.m in Sources */,
+				B7EC1E3F1791D5680094B58F /* VDFilesViewController.m in Sources */,
+				B71653991792C9D600FE7D06 /* VDFileCell.m in Sources */,
+				B764D02A1793F08F00B546B9 /* YandexDisk.xcdatamodeld in Sources */,
+				B764D02D17952EBF00B546B9 /* VDCDFile.m in Sources */,
+				B764D07117956DB400B546B9 /* VDDataSynchronizer.m in Sources */,
+				B764D0771795720900B546B9 /* VDCDFile+DataSync.m in Sources */,
+				B7CC21D01795BCD200757D12 /* VDDAVSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +351,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YandexDisk/YandexDisk-Prefix.pch";
-				INFOPLIST_FILE = "YandexDisk/YandexDisk-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "YandexDisk/Yandex.Disk-Prefix.pch";
+				INFOPLIST_FILE = "YandexDisk/Yandex.Disk-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = Yandex.Disk;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -273,9 +363,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YandexDisk/YandexDisk-Prefix.pch";
-				INFOPLIST_FILE = "YandexDisk/YandexDisk-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "YandexDisk/Yandex.Disk-Prefix.pch";
+				INFOPLIST_FILE = "YandexDisk/Yandex.Disk-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = Yandex.Disk;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -283,7 +374,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B7EC1E08178E7DF90094B58F /* Build configuration list for PBXProject "YandexDisk" */ = {
+		B7EC1E08178E7DF90094B58F /* Build configuration list for PBXProject "Yandex.Disk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7EC1E2E178E7DFA0094B58F /* Debug */,
@@ -292,15 +383,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B7EC1E30178E7DFA0094B58F /* Build configuration list for PBXNativeTarget "YandexDisk" */ = {
+		B7EC1E30178E7DFA0094B58F /* Build configuration list for PBXNativeTarget "Yandex.Disk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7EC1E31178E7DFA0094B58F /* Debug */,
 				B7EC1E32178E7DFA0094B58F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B764D0281793F08F00B546B9 /* YandexDisk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B764D0291793F08F00B546B9 /* YandexDisk.xcdatamodel */,
+			);
+			currentVersion = B764D0291793F08F00B546B9 /* YandexDisk.xcdatamodel */;
+			path = YandexDisk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B7EC1E05178E7DF90094B58F /* Project object */;
 }
