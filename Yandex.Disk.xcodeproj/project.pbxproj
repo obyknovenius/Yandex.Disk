@@ -43,7 +43,7 @@
 		B764D0761795720900B546B9 /* VDCDFile+DataSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VDCDFile+DataSync.m"; sourceTree = "<group>"; };
 		B7CC21CE1795BCD200757D12 /* VDDAVSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDAVSession.h; sourceTree = "<group>"; };
 		B7CC21CF1795BCD200757D12 /* VDDAVSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDDAVSession.m; sourceTree = "<group>"; };
-		B7EC1E0D178E7DF90094B58F /* Yandex.Disk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yandex.Disk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7EC1E0D178E7DF90094B58F /* YandexDisk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexDisk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EC1E10178E7DF90094B58F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B7EC1E12178E7DF90094B58F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B7EC1E14178E7DF90094B58F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -127,7 +127,7 @@
 		B7EC1E0E178E7DF90094B58F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B7EC1E0D178E7DF90094B58F /* Yandex.Disk.app */,
+				B7EC1E0D178E7DF90094B58F /* YandexDisk.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			);
 			name = Yandex.Disk;
 			productName = YandexDisk;
-			productReference = B7EC1E0D178E7DF90094B58F /* Yandex.Disk.app */;
+			productReference = B7EC1E0D178E7DF90094B58F /* YandexDisk.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -354,7 +354,7 @@
 				GCC_PREFIX_HEADER = "YandexDisk/Yandex.Disk-Prefix.pch";
 				INFOPLIST_FILE = "YandexDisk/Yandex.Disk-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = Yandex.Disk;
+				PRODUCT_NAME = YandexDisk;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -366,7 +366,7 @@
 				GCC_PREFIX_HEADER = "YandexDisk/Yandex.Disk-Prefix.pch";
 				INFOPLIST_FILE = "YandexDisk/Yandex.Disk-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = Yandex.Disk;
+				PRODUCT_NAME = YandexDisk;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
